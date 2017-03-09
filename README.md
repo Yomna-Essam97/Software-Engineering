@@ -1,2 +1,1 @@
-# Software-Engineering-I
-Bright Minds Software 
+# Software-Engineering course
