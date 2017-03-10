@@ -1,31 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57" started-at="2017-03-10T02:27:12Z" finished-at="2017-03-10T02:27:12Z">
+  <suite name="Default suite" duration-ms="51" started-at="2017-03-10T17:12:39Z" finished-at="2017-03-10T17:12:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57" started-at="2017-03-10T02:27:12Z" finished-at="2017-03-10T02:27:12Z">
+    <test name="Default test" duration-ms="51" started-at="2017-03-10T17:12:39Z" finished-at="2017-03-10T17:12:39Z">
       <class name="Data_managerTest">
-        <test-method status="PASS" signature="load_data(boolean)[pri:0, instance:Data_managerTest@573f2bb1]" name="load_data" duration-ms="21" started-at="2017-03-10T04:27:12Z" data-provider="incorrect" finished-at="2017-03-10T04:27:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- load_data -->
-        <test-method status="FAIL" signature="load_data(boolean)[pri:0, instance:Data_managerTest@573f2bb1]" name="load_data" duration-ms="3" started-at="2017-03-10T04:27:12Z" data-provider="incorrect" finished-at="2017-03-10T04:27:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="load_data()[pri:0, instance:Data_managerTest@48eff760]" name="load_data" duration-ms="24" started-at="2017-03-10T19:12:39Z" finished-at="2017-03-10T19:12:39Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -38,7 +20,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:305)
 	at org.testng.Assert.assertEquals(Assert.java:315)
-	at Data_managerTest.load_data(Data_managerTest.java:16)
+	at Data_managerTest.load_data(Data_managerTest.java:10)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

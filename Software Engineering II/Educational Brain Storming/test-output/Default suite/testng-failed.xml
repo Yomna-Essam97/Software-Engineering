@@ -5,7 +5,7 @@
     <classes>
       <class name="Data_managerTest">
         <methods>
-          <include name="load_data" invocation-numbers="1"/>
+          <include name="load_data"/>
         </methods>
       </class> <!-- Data_managerTest -->
     </classes>

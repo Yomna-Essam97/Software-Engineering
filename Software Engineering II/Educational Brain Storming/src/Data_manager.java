@@ -56,7 +56,7 @@ boolean upload_game(Game ng){
 	return true;
 }
 
-void load_data(){
+boolean load_data(){
 	Scanner sc;
 	Account student = new Student();
 	try {
@@ -70,6 +70,7 @@ void load_data(){
 			student.setAge((Integer.parseInt(sc.nextLine())));
 			student.setScore(Integer.parseInt(sc.nextLine()));
 			Student_accounts.add((Student)student);
+			
 		}
 		} 
 		catch (FileNotFoundException e) {
@@ -117,18 +118,23 @@ void load_data(){
 			if(type.equals("MCQ")){
 				Game mcqgame = new Game(name ,type , minage , maxage , datapath);
 				MCQGames.MCQgames.add(mcqgame);
-				System.out.println("MCQ");
+				
 			}
 			else if(type.equals("TF")){
 				Game TFgame = new Game(name  , type , minage , maxage , datapath);
 				TFGames.TFgames.add(TFgame);
-				System.out.println("TF");
 			}
+//			else {
+//				System.out.println("Write again correct type of game and re-call this function");
+//				return false;
+//			}
+			
 		}
 		} 
 		catch (FileNotFoundException e) {
 		e.printStackTrace();
 	}
+	return true;
 }
 
 boolean update_data(Account x){
