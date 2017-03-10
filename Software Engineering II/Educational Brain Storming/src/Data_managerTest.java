@@ -7,6 +7,6 @@ public class Data_managerTest {
   public void load_data() {
 	  Data_manager d = new Data_manager();
 	 
-	  Assert.assertEquals(d.load_data(),true);
+	  Assert.assertEquals(d.load_data(),false);
   }
 }

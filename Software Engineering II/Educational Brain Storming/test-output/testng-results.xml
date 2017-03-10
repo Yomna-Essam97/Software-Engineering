@@ -2,18 +2,18 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51" started-at="2017-03-10T17:12:39Z" finished-at="2017-03-10T17:12:39Z">
+  <suite name="Default suite" duration-ms="73" started-at="2017-03-10T17:29:34Z" finished-at="2017-03-10T17:29:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51" started-at="2017-03-10T17:12:39Z" finished-at="2017-03-10T17:12:39Z">
+    <test name="Default test" duration-ms="73" started-at="2017-03-10T17:29:34Z" finished-at="2017-03-10T17:29:35Z">
       <class name="Data_managerTest">
-        <test-method status="FAIL" signature="load_data()[pri:0, instance:Data_managerTest@48eff760]" name="load_data" duration-ms="24" started-at="2017-03-10T19:12:39Z" finished-at="2017-03-10T19:12:39Z">
+        <test-method status="FAIL" signature="load_data()[pri:0, instance:Data_managerTest@48eff760]" name="load_data" duration-ms="32" started-at="2017-03-10T19:29:34Z" finished-at="2017-03-10T19:29:35Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
