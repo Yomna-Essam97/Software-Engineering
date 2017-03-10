@@ -5,7 +5,8 @@ public class AddGame {
 	Game NewGame;
 	Data_manager manager = new Data_manager(); 
 	
-	void creat_game(){
+	Game creat_game(){
+		Game g = new Game();
 		Scanner sc = new Scanner(System.in);
 		Game new_game = new Game();
 		System.out.print("Enter The name of the game : ");
@@ -18,14 +19,15 @@ public class AddGame {
 		new_game.MaxAge = Integer.parseInt(sc.nextLine());
 		System.out.print("creat file that have the Questetion and the answers and uplouad it : ");
 		new_game.data_path = sc.nextLine();
-		if(AddGame(new_game , new Admin())){
+		if(Addgame(new_game , new Admin())){
 			System.out.println("your game is Successfully Uploaded");
+			return new_game;
 		}
-		else{System.out.println("The Admin Refuses your request");}
+		else{System.out.println("The Admin Refuses your request"); return g;		}
 	}
 	
 	
-	boolean AddGame(Game g, Admin a)
+	boolean Addgame(Game g, Admin a)
 	{
 		if(a.Review_Game(g) == true)
 		{

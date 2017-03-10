@@ -18,7 +18,8 @@ public class MCQTest {
 	  g.MaxAge=150;
 	  g.data_path="MCQ_GAME.txt";
 	  Assert.assertEquals(result, obj.PlayMCQ(g));
-
+	  //g.data_path="";
+	  //Assert.assertEquals(true, obj.PlayMCQ(g));
 	  
 	  
   }

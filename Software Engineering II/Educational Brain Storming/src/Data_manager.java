@@ -117,10 +117,12 @@ void load_data(){
 			if(type.equals("MCQ")){
 				Game mcqgame = new Game(name ,type , minage , maxage , datapath);
 				MCQGames.MCQgames.add(mcqgame);
+				System.out.println("MCQ");
 			}
 			else if(type.equals("TF")){
 				Game TFgame = new Game(name  , type , minage , maxage , datapath);
 				TFGames.TFgames.add(TFgame);
+				System.out.println("TF");
 			}
 		}
 		} 

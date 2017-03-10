@@ -15,7 +15,7 @@ public class TFTest {
 	  TF obj = new TF();
 	  Game g = new Game();
 	  g.Name="Math&Scince";
-	  g.type="TF";
+	  g.type="TM";
 	  g.MinAge=88;
 	  g.MaxAge=15;
 	  g.data_path="TF_GAME.txt";

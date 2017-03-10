@@ -1,10 +1,10 @@
 Math&Scince
-TF
+TFg
 7
 15
 TF_GAME.txt
 Math
-TF
+TFMCQ
 8
 20
 TF_GAME.txt

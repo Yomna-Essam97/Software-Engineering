@@ -22,7 +22,7 @@ public class RegisterationTest {
   @Test
   public void Check_infoS() {
 	  Registeration v = new Registeration();
-	  Account account = new Student("nouran","011","nouran@.com","female",20,"student") ;
+	  Account account = new Student("nouran","011","nouran@.com","fema",-20,"student") ;
 	  Account c = v.Check_info();
 	  Assert.assertEquals(account.name,c.name);
 	  Assert.assertEquals(account.mail,c.mail);
