@@ -36,7 +36,7 @@ public class Teacher {
 	private String VerificationCode;
 
 	@NotEmpty
-	@Size(min = 8)
+	@Size(min = 8, max = 20)
 	private String password;
 
 	private String type = "teacher";
