@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Sign up as Teacher</title>
+</head>
+<body>
+<Form action="#"  method = "post" th:action="@{/SignupTeacher}" th:object="${teacher}">
+		<label>name</label><input type  = "text" th:field="*{name}"/>		
+		<br></br>
+		
+		<label>age</label><input type  = "number" th:field="*{age}"/>
+			<p th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</p>
+		<br></br>
+		
+		<label>gender</label><input type  = "text" th:field="*{gender}"/>
+		<br></br>
+		
+		<label>nationality</label><input type  = "text" th:field="*{nationality}"/>
+          		<br></br>
+          
+		<label>email</label><input type  = "text" th:field="*{email}"/>		
+          		<br></br>
+          
+		<label>password</label><input type  = "password" th:field="*{password}"/>
+		          		<br></br>
+         
+        <label>Verification Code</label><input type  = "text" th:field="*{verificationCode}"/>        
+          		<br></br>
+          
+		<input type  = "submit" value = "Submit" />
+</Form>
+
+</body>
+</html>
