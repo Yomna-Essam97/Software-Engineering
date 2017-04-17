@@ -6,6 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Table(name = "users")
@@ -14,17 +17,23 @@ public class Student {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 
+	@NotEmpty
 	private String email;
 
+	@NotEmpty
+	@Size(min = 8)
 	private String password;
 
+	@NotEmpty
 	private String name;
 
 	@Min(6)
 	private int age;
 
+	@NotEmpty
 	private String gender;
 
+	@NotEmpty
 	private String nationality;
 
 	private int score;

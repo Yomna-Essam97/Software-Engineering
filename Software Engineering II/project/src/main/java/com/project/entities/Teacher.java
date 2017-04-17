@@ -2,35 +2,47 @@ package com.project.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Table(name = "users")
 public class Teacher {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue
 	private Integer id;
 
+	@NotEmpty
 	private String email;
 
+	@NotEmpty
 	private String name;
 
 	@Min(20)
 	private int age;
 
+	@NotEmpty
 	private String gender;
 
+	@NotEmpty
 	private String nationality;
 
+	@NotEmpty
 	private String VerificationCode;
 
+	@NotEmpty
+	@Size(min = 8)
 	private String password;
 
 	private String type = "teacher";
+	private int score = -1; // 3lshan mynf3sh fl db tkon b-null 3shan int fa
+							// lazm
+							// ay initial value
 
 	public Teacher() {
 		password = "";

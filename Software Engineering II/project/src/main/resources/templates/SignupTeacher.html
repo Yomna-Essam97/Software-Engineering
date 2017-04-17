@@ -6,7 +6,8 @@
 </head>
 <body>
 <Form action="#"  method = "post" th:action="@{/SignupTeacher}" th:object="${teacher}">
-		<label>name</label><input type  = "text" th:field="*{name}"/>		
+		<label>name</label><input type  = "text" th:field="*{name}"/>
+		<p th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</p>		
 		<br></br>
 		
 		<label>age</label><input type  = "number" th:field="*{age}"/>
@@ -14,19 +15,24 @@
 		<br></br>
 		
 		<label>gender</label><input type  = "text" th:field="*{gender}"/>
+		<p th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}">Gender Error</p>
 		<br></br>
 		
 		<label>nationality</label><input type  = "text" th:field="*{nationality}"/>
+         <p th:if="${#fields.hasErrors('nationality')}" th:errors="*{nationality}">Nationality Error</p>
           		<br></br>
           
-		<label>email</label><input type  = "text" th:field="*{email}"/>		
+		<label>email</label><input type  = "text" th:field="*{email}"/>
+		<p th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</p>		
           		<br></br>
           
 		<label>password</label><input type  = "password" th:field="*{password}"/>
+		<p th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</p>
 		          		<br></br>
          
         <label>Verification Code</label><input type  = "text" th:field="*{verificationCode}"/>        
-          		<br></br>
+        <p th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</p>
+        <br></br>
           
 		<input type  = "submit" value = "Submit" />
 </Form>
