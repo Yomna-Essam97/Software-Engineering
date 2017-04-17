@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Min;
 
 @Entity
 @Table(name = "users")
@@ -19,7 +20,7 @@ public class Student {
 
 	private String name;
 
-	// @Min(6)
+	@Min(6)
 	private int age;
 
 	private String gender;

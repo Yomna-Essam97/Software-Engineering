@@ -20,13 +20,12 @@
           		<br></br>
           
 		<label>email</label><input type  = "text" th:field="*{email}"/>
-		
+		 <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</p>
           		<br></br>
           
 		<label>password</label><input type  = "password" th:field="*{password}"/>
           		<br></br>
-        
-          
+                  
 		<input type  = "submit" value = "Submit" />
 </Form>
 

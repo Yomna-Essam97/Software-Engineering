@@ -7,8 +7,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
 
-import org.hibernate.validator.constraints.NotEmpty;
-
 @Entity
 @Table(name = "users")
 public class Teacher {
@@ -17,25 +15,19 @@ public class Teacher {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 
-	@NotEmpty
 	private String email;
 
-	@NotEmpty
 	private String name;
 
 	@Min(20)
 	private int age;
 
-	@NotEmpty
 	private String gender;
 
-	@NotEmpty
 	private String nationality;
 
-	@NotEmpty
 	private String VerificationCode;
 
-	@NotEmpty
 	private String password;
 
 	private String type = "teacher";
