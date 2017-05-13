@@ -37,7 +37,8 @@ public class Student {
 	private String nationality;
 
 	private int score;
-	private String type = "student";
+	private String academic_mail = ""; // 3shan f teacher not empty
+	private String type = "student"; // 3shan a3rf hd5ol f anhy page fl login
 
 	public Integer getId() {
 		return id;
@@ -103,9 +104,8 @@ public class Student {
 		this.score = score;
 	}
 
-	public Student(Integer id, String password, String name, int age, String gender, String nationality, String email,
+	public Student(Integer id, String password, String name, String gender, String nationality, int age, String email,
 			int score) {
-		super();
 		this.id = id;
 		this.password = password;
 		this.name = name;

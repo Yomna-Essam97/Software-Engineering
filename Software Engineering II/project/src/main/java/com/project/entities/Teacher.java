@@ -33,13 +33,14 @@ public class Teacher {
 	private String nationality;
 
 	@NotEmpty
-	private String VerificationCode;
+	@Size(min = 4, max = 20)
+	private String academic_mail;
 
 	@NotEmpty
 	@Size(min = 8, max = 20)
 	private String password;
 
-	private String type = "teacher";
+	private String type = "teacher"; // 3shan a3rf hd5ol f anhy page fl login
 	private int score = -1; // 3lshan mynf3sh fl db tkon b-null 3shan int fa
 							// lazm
 							// ay initial value
@@ -51,19 +52,18 @@ public class Teacher {
 		gender = "";
 		nationality = "";
 		email = "";
-		VerificationCode = "";
+		academic_mail = "";
 	}
 
 	public Teacher(Integer id, String email, String name, int age, String gender, String nationality,
-			String verificationCode, String password) {
-		super();
+			String academic_mail, String password) {
 		this.id = id;
 		this.email = email;
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
 		this.nationality = nationality;
-		VerificationCode = verificationCode;
+		this.academic_mail = academic_mail;
 		this.password = password;
 	}
 
@@ -115,12 +115,12 @@ public class Teacher {
 		this.nationality = nationality;
 	}
 
-	public String getVerificationCode() {
-		return VerificationCode;
+	public String getAcademic_mail() {
+		return academic_mail;
 	}
 
-	public void setVerificationCode(String verificationCode) {
-		VerificationCode = verificationCode;
+	public void setAcademic_mail(String academic_mail) {
+		this.academic_mail = academic_mail;
 	}
 
 	public String getPassword() {
